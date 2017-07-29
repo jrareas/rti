@@ -9,12 +9,14 @@ This project is using Laravel 5.4. Laravel uses a file .env to manage server var
 
 The database configuration is set as server variables inside .env file. Make sure you have the right values for you environment for the following keys:
 
+```
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=homestead
 DB_USERNAME=homestead
 DB_PASSWORD=secret
+```
 
 # Apache configuration
 
