@@ -1,2 +1,0 @@
-# rti
-RTI POC
