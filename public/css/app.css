@@ -8365,7 +8365,11 @@ body {
   background-color: white !important;
 }
 
-.navbar-default .navbar-toggle {
+.navbar-default {
+  background-color: #212121 !important;
+}
+
+.navbar-default.navbar-toggle {
   border: 0px !important;
 }
 

@@ -11,8 +11,11 @@ body{
 	height:5px !important;
 	background-color:white !important;
 }
-.navbar-default .navbar-toggle {
-    border: 0px !important;
+.navbar-default{
+ 	background-color:$brand-primary !important;
+	&.navbar-toggle {
+    	border: 0px !important;
+    }
 }
 .navbar-brand{
 	color: $brand-info !important;
