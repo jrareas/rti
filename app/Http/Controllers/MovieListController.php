@@ -11,7 +11,6 @@ class MovieListController extends Controller
 	public function __construct(TheMovieDB $movieDb) {
 		$this->movieDb = $movieDb;
 	}
-    //
     public function getList($key,$page) {
     	return $this->movieDb->getPopular($page);
     }

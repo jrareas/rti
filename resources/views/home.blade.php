@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">	
+<v-container>
 		<videos-page></videos-page>
-</div>
+</v-container>
 @endsection

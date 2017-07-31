@@ -8359,15 +8359,63 @@ body {
   margin: 0 !important;
 }
 
-@media only screen and (min-width: 576px) {
-  div.loadMore {
+.navbar-toggle .icon-bar {
+  width: 6px !important;
+  height: 5px !important;
+  background-color: white !important;
+}
+
+.navbar-default .navbar-toggle {
+  border: 0px !important;
+}
+
+.navbar-brand {
+  color: #8eb4cb !important;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+}
+
+img.poster {
+  width: 100%;
+  height: auto;
+}
+
+.navbar {
+  margin-bottom: 0px !important;
+}
+
+.navbar-header,
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #212121 !important;
+}
+
+.video-list img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+div.loadmore {
+  width: 185px;
+  height: 278px;
+  padding-top: 10px;
+}
+
+div.loadmore button {
+  position: relative;
+  left: 30%;
+}
+
+@media only screen and (max-width: 576px) {
+  div.loadmore {
     width: 185px;
     height: 278px;
+    padding-top: 10px;
   }
 
-  div button {
+  div.loadmore button {
     position: relative;
-    top: 50%;
     left: 30%;
   }
 }
