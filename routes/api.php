@@ -16,3 +16,7 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+Route::get('/list','MovieListController@getList');
+Route::group(['prefix'=>'movie'],function(){
+	Route::get('/list/{key}/{page}','MovieListController@getList');
+});

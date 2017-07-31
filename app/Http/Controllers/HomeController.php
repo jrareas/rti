@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Services\TheMovieDB;
 
 class HomeController extends Controller
 {
@@ -21,8 +22,8 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(TheMovieDB $movieDb)
     {
-        return view('home');
+        return view('home',['page'=>'Popular Movies','movies'=>$movieDb->getPopular()]);
     }
 }

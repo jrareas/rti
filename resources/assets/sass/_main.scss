@@ -1,0 +1,22 @@
+body{
+	background-color:$brand-primary;
+}
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+
+@media only screen and (min-width: 576px) {
+	div {
+		&.loadMore{
+			width:185px;
+			height:278px;
+		}
+		& button {
+			position:relative;
+		    top:50%; 
+		    left:30%;
+    	}
+	}
+}
