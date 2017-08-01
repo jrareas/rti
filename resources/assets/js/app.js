@@ -9,6 +9,7 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 window.Vuetify = require('vuetify');
+
 Vue.use(Vuetify);
 
 /**
@@ -24,6 +25,10 @@ Vue.component(
 	    require('./components/videos/Page.vue')
 );
 
+Vue.component(
+	    'video-detail-page',
+	    require('./components/videos/Video.vue')
+);
 const app = new Vue({
     el: '#app'
 });

@@ -8424,6 +8424,16 @@ div.loadmore button {
   left: 30%;
 }
 
+div.poster {
+  cursor: pointer;
+}
+
+.movie-detail {
+  background-color: #fff;
+  z-index: 1000;
+  color: #333;
+}
+
 @media only screen and (max-width: 576px) {
   div.loadmore {
     width: 185px;

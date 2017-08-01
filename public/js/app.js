@@ -888,6 +888,7 @@ __webpack_require__(11);
 
 window.Vue = __webpack_require__(36);
 window.Vuetify = __webpack_require__(37);
+
 Vue.use(Vuetify);
 
 /**
@@ -900,6 +901,7 @@ Vue.component('example', __webpack_require__(38));
 
 Vue.component('videos-page', __webpack_require__(41));
 
+Vue.component('video-detail-page', __webpack_require__(54));
 var app = new Vue({
   el: '#app'
 });
@@ -51532,6 +51534,126 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 45 */,
+/* 46 */,
+/* 47 */,
+/* 48 */,
+/* 49 */,
+/* 50 */,
+/* 51 */,
+/* 52 */,
+/* 53 */,
+/* 54 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var Component = __webpack_require__(8)(
+  /* script */
+  __webpack_require__(56),
+  /* template */
+  __webpack_require__(55),
+  /* styles */
+  null,
+  /* scopeId */
+  null,
+  /* moduleIdentifier (server only) */
+  null
+)
+Component.options.__file = "/Users/joseareas/Developer/php/RTI/resources/assets/js/components/videos/Video.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] Video.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-60e635b3", Component.options)
+  } else {
+    hotAPI.reload("data-v-60e635b3", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 55 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_c('v-layout', {
+    attrs: {
+      "row": "",
+      "justify-center": ""
+    }
+  }, [_c('v-dialog', {
+    attrs: {
+      "fullscreen": "",
+      "transition": "dialog-bottom-transition",
+      "overlay": false
+    },
+    model: {
+      value: (_vm.dialog),
+      callback: function($$v) {
+        _vm.dialog = $$v
+      },
+      expression: "dialog"
+    }
+  }, [_c('v-card', [_vm._v("\n\t\t\t\tdetails\n\t\t\t")])], 1)], 1)], 1)
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-60e635b3", module.exports)
+  }
+}
+
+/***/ }),
+/* 56 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+	data: function data() {
+		return {
+			dialog: true
+		};
+	},
+	ready: function ready() {
+		this.prepareComponent();
+	},
+	mounted: function mounted() {
+		this.prepareComponent();
+	},
+
+	methods: {
+		prepareComponent: function prepareComponent() {
+			//console.log(this.video_id)
+		}
+	}
+});
 
 /***/ })
 /******/ ]);
