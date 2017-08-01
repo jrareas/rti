@@ -13,12 +13,12 @@ body{
 }
 .navbar-default{
  	background-color:$brand-primary !important;
-	&.navbar-toggle {
+	& .navbar-toggle {
     	border: 0px !important;
     }
 }
 .navbar-brand{
-	color: $brand-info !important;
+	color: $text-color !important;
 	font-size: 24px;
 	font-weight: bold;
 	text-align: left;
@@ -32,9 +32,18 @@ img{
 .navbar{
 	margin-bottom:0px !important;
 }
-.navbar-header, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus 
+.panel-body {
+	color : #333 !important;
+}
+.navbar-header, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus ,
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus
 {
   background-color: $brand-primary !important;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus,
+	.navbar-default .navbar-nav > li > a {
+	color:$text-color !important;
 }
 .video-list{
 	& img{
