@@ -1,17 +1,15 @@
 <template>
-	<div>
+	<div class="row row-movie">
 		<div v-for="(row,key) in rows">
-			<div class="row">
-				<div v-for="movie in row">
-					<a v-bind:href="'moviedetail/' + movie.id" >
-						<div class='nopadding col-xs-6 col-sm-6 col-md-2 col-lg-2 poster' v-bind:id="'movie_' + movie.id">
-							<img class='poster' v-bind:src="'http://image.tmdb.org/t/p/w185' + movie.poster_path"/>
-						</div>
-					</a>
-				</div>
+			<div v-for="movie in row">
+				<a v-bind:href="'moviedetail/' + movie.id" >
+					<div class='nopadding col-xs-6 col-lg-2 poster' v-bind:id="'movie_' + movie.id">
+						<img class='poster' v-bind:src="'http://image.tmdb.org/t/p/w185' + movie.poster_path" />
+					</div>
+				</a>
 			</div>
 		</div>
-		<div class='col-xs-12 loadmore'> <button class='btn' v-on:click="getVideos(lastPage +1)">Load More</button></div>
+		<div class='col-xs-12 loadmore'><button class='btn' v-on:click="getVideos(lastPage +1)">Load More</button></div>
 	</div>
 </template>
 <script>

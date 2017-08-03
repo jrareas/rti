@@ -51437,8 +51437,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -51496,16 +51494,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_vm._l((_vm.rows), function(row, key) {
-    return _c('div', [_c('div', {
-      staticClass: "row"
-    }, _vm._l((row), function(movie) {
+  return _c('div', {
+    staticClass: "row row-movie"
+  }, [_vm._l((_vm.rows), function(row, key) {
+    return _c('div', _vm._l((row), function(movie) {
       return _c('div', [_c('a', {
         attrs: {
           "href": 'moviedetail/' + movie.id
         }
       }, [_c('div', {
-        staticClass: "nopadding col-xs-6 col-sm-6 col-md-2 col-lg-2 poster",
+        staticClass: "nopadding col-xs-6 col-lg-2 poster",
         attrs: {
           "id": 'movie_' + movie.id
         }
@@ -51515,7 +51513,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
           "src": 'http://image.tmdb.org/t/p/w185' + movie.poster_path
         }
       })])])])
-    }))])
+    }))
   }), _vm._v(" "), _c('div', {
     staticClass: "col-xs-12 loadmore"
   }, [_c('button', {

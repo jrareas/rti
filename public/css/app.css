@@ -11539,6 +11539,7 @@ i.arrow {
 img.poster {
   width: 100%;
   height: auto;
+  min-height: 270px;
 }
 
 .navbar {
