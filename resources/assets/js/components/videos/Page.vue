@@ -6,6 +6,7 @@
 					<div class='nopadding col-xs-6 col-lg-2 poster' v-bind:id="'movie_' + movie.id">
 						<img class='poster' v-bind:src="'http://image.tmdb.org/t/p/w185' + movie.poster_path" />
 					</div>
+					<div class="clear"></div>
 				</a>
 			</div>
 		</div>

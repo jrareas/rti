@@ -37,7 +37,7 @@ Make sure you have the servername in you hosts file.
 
 # Folder permission
 
-The document root folder needs to be readeable by webserver user. Besides, you need to have proper permission in storage folder in order to run some artisan commands. That folder needs to be writable by the webserver user and whichever user you use to run `php artisan` commands  
+The document root folder needs to be readeable by webserver user. Besides, you need to have proper permission in `storage` folder in order to run some artisan commands. That folder needs to be writable by the webserver user and whichever user you use to run `php artisan` commands  
  
  
 # Cloning the repo
@@ -70,7 +70,7 @@ npm run watch
 ```
 # Migrations
 
-run migrate command as below to initialize the database. If you experience any permission issue when run this command you may need to recreate the database after fix the permissions to the storage folder.
+run migrate command as below to initialize the database. If you experience any permission issue when run this command you may need to recreate the database after fix the permissions to the `storage` folder.
 
 ```
 php artisan migrate
@@ -85,3 +85,7 @@ In order to get data from themoviedb, an API key is required. Please make sure y
 ```
 MOVIE_DB_API_KEY=apikey
 ```
+
+# Using the website
+
+You will need to register a user before start using the site. The registration has no validation process. Once you register, you will be able to login and access the website.
