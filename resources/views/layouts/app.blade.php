@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }} ({{ isset($page)?$page:"Login" }})</title>
+    <title>{{isset($page)?$page:"Login" }}</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -28,8 +28,8 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }} ({{ isset($page)?$page:"Login" }})
+                    <a class="navbar-brand" href="{{isset($header_link)?url($header_link):url('/') }}">
+                        {!! isset($page)?$page:"Login" !!}
                     </a>
                 </div>
 
@@ -70,8 +70,10 @@
                 </div>
             </div>
         </nav>
-
-        @yield('content')
+		<div class="content {{isset($content_class)?$content_class:''}}">
+			@yield('content')
+		</div>
+        
     </div>
 
     <!-- Scripts -->

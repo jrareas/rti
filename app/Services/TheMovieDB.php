@@ -22,7 +22,13 @@ class TheMovieDB {
 		}
 		return $this->data[$key][$page];
 	}
+	private function getDataMovie($movieId) {
+		
+	}
 	public function getPopular($page=1) {
 		return $this->getData(self::POPULAR_KEY,$page);
+	}
+	public function getMovieDetail($movieId) {
+		return $this->requestMovieDb->request(sprintf('%s/%s/%s',self::API_VERSION, 'movie',$movieId),'GET');
 	}
 }

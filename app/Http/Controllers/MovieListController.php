@@ -14,4 +14,7 @@ class MovieListController extends Controller
     public function getList($key,$page) {
     	return $this->movieDb->getPopular($page);
     }
+    public function getMovieDetail($movie_id) {
+    	return $this->movieDb->getMovieDetail($movie_id);
+    }
 }
